@@ -19,7 +19,7 @@
 
 .videoFooterMusic-text {
     width: 80%;
-    overflow-x: hidden ;
+    overflow-x: hidden;
 }
 
 .videoFooterMusic-text p {
@@ -36,20 +36,31 @@
 }
 
 @keyframes spinRecord {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
 
 @keyframes moveText {
-    0%{
+    0% {
         transform: translateX(100%);
     }
 
-    100%{
+    100% {
         transform: translateX(-100%);
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .videoFooter {
+        bottom: 22%;
+    }
+
+    .videoFooterMusic-text {
+        width: 78%;
     }
 }
